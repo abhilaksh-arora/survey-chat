@@ -1,7 +1,9 @@
 const mongoose = require("mongoose");
 require("dotenv").config();
 
-const uri = "mongodb://localhost:27017/survey-chat";
+// const uri = "mongodb://localhost:27017/survey-chat";
+const uri =
+  "mongodb+srv://mailerdeve:vh7QXAJUHtW70amw@cluster0.mkqzfwt.mongodb.net/?retryWrites=true&w=majority";
 
 const options = {
   autoIndex: false, // Don't build indexes
