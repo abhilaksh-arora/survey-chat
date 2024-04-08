@@ -1,0 +1,181 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(97, 138, 254, 0.9);
+  margin: 50px;
+}
+.card {
+  width: 500px;
+  padding: 10px;
+  margin: auto;
+  background: #fafafa;
+  border-radius: 12px;
+  box-shadow: 2px 2px 20px 5px rgba(0, 0, 0, 0.5);
+}
+.card h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.input {
+  background: #fff;
+  box-shadow: 0px 0px 95px -30px rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  /* text-align: center; */
+}
+
+.input label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+.input .ques {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4f7df9;
+  width: 100%;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+}
+
+.input .opt {
+  outline: none;
+  border: none;
+  width: 80%;
+  border-bottom: 1px solid #4f7df9;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+}
+
+.input .ques1 {
+  outline: auto;
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+}
+
+.input .opt1 {
+  outline: auto;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  width: fit-content;
+}
+
+/* .input select {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4f7df9;
+  width: 50%;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+} */
+.input1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+.btn {
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+  color: #fff;
+  background: rgb(97, 138, 254, 1);
+  font-size: 16px;
+  border-radius: 7px;
+  padding: 12px 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  transition: all 0.5s;
+}
+.btn:hover {
+  background: #0044ff;
+}
+.result p {
+  font-weight: 600;
+  font-size: 22px;
+  color: #000;
+  text-align: center;
+  /* margin-bottom: 15px; */
+}
+.result #result {
+  font-size: 16px;
+  font-weight: 900;
+  color: #4f7df9;
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 7px 15px;
+  border-radius: 55px;
+  margin-top: 5px;
+}
+
+.result #result1 {
+  font-size: 16px;
+  font-weight: 900;
+  color: #cc1616;
+  background-color: #eaeaea;
+  display: inline-block;
+  padding: 7px 15px;
+  border-radius: 55px;
+  margin-top: 5px;
+}
+
+@media (max-width: 786px) {
+  .card {
+    width: 330px;
+  }
+
+  .input label {
+    font-size: 13px;
+  }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.filter-button input[type="radio"] {
+  display: none;
+}
+
+.filter-button{
+  /* border: 1px solid #ebecf0; */
+  color: #42526e;
+  border-radius: 50px;
+  margin-top: 10px;
+  /* cursor: pointer; */
+  background: rgba(97, 139, 254, 0.306);
+}
+
+.filter-button:hover {
+  border: 1px solid rgb(97, 138, 254, 1);
+  border-radius: 50px;
+  margin-top: 10px;
+}
