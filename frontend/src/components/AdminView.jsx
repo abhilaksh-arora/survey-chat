@@ -26,9 +26,14 @@ const AdminView = () => {
 
   return (
     <div>
-      <div className="card">
+      <div className="card result">
         <h2>Chatbot Satisfaction Survey Responses</h2>
-        <Link to="/admin">View Questions</Link>
+        <div className="text-center pb-2">
+
+        <Link id="result" to="/admin">
+          View Questions
+        </Link>
+        </div>
         <div>
           {responses.length === 0 ? (
             <p>No responses found.</p>

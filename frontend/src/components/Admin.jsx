@@ -151,9 +151,13 @@ const Admin = () => {
   };
   return (
     <div>
-      <div className="card">
+      <div className="card result">
         <h2>Chatbot Satisfaction Survey</h2>
-        <Link to="/view-responses">View Responses</Link>
+        <div className="text-center pb-2">
+          <Link id="result" to="/view-responses">
+            View Responses
+          </Link>
+        </div>
         <div>
           <form onSubmit={handleSubmit}>
             {questions.map((question, index) => (

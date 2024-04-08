@@ -9,6 +9,9 @@ const ChatInterface = () => {
   const [error, setError] = useState(null);
   const [typedMessage, setTypedMessage] = useState("");
 
+  const defaultQuestion = "Are we done?";
+  const defaultOptions = ["Yes", "No"];
+
   useEffect(() => {
     const fetchQuestions = async () => {
       try {
@@ -98,7 +101,7 @@ const ChatInterface = () => {
 
   return (
     <div className="card">
-      <div className="flex flex-col items-center justify-center min-h-screen text-gray-800 p-10">
+      <div className="flex flex-col items-center justify-center min-h-screen text-gray-800 lg:p-10">
         <div className="flex flex-col flex-grow w-full max-w-xl bg-white shadow-xl rounded-lg overflow-hidden">
           <div className="bg-gray-800 h-20 flex flex-row">
             <div>
@@ -166,13 +169,15 @@ const ChatInterface = () => {
               </div>
             )}
             {allQuestionsAnswered && (
-              <div className="flex w-full mt-2 space-x-3 max-w-xs">
-                <div className="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
-                <div>
-                  <div className="bg-gray-300 p-3 rounded-r-lg rounded-bl-lg">
-                    <p className="text-sm">
-                      Thank you for filling out the feedback!
-                    </p>
+              <div>
+                <div className="flex w-full mt-2 space-x-3 max-w-xs">
+                  <div className="flex-shrink-0 h-10 w-10 rounded-full bg-gray-300"></div>
+                  <div>
+                    <div className="bg-gray-300 p-3 rounded-r-lg rounded-bl-lg">
+                      <p className="text-sm">
+                        Thank you for filling out the feedback!
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
